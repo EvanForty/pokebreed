@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#eaf2d9">
+  <meta name="description" content="Hatch a token. Build a bloodline. Explore a pixel-art ecosystem of Pokémon breeding agents, inherited card vaults, and evolving token families.">
+  <title>PokéBreed — Hatch. Breed. Evolve.</title>
+  <link rel="icon" href="pokebreed-egg.png"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="daycare.css"><link rel="stylesheet" href="map-hover.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="#map" aria-label="PokéBreed home"><img src="pokebreed-egg.png" alt="Pixel Pokémon egg"><span>POKÉ<span>BREED</span><small>HATCH. BREED. EVOLVE.</small></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#map" data-page="map"><span class="nav-icon">⌘</span> Map</a>
+      <a href="#tokens" data-page="tokens">Tokens</a>
+      <a href="#agents" data-page="agents">Agents</a>
+      <a href="#vault" data-page="vault">Card vault</a>
+      <a href="#guide" data-page="guide">How it works</a>
+    </nav>
+    <div class="header-actions"><button class="button primary" data-action="hatch"><span>＋</span> Hatch an egg</button><button class="button wallet-button" data-action="wallet"><span class="wallet-icon">▣</span><span id="wallet-label">Connect wallet</span></button><a class="button social-button" href="https://x.com/PokeBreedFun" target="_blank" rel="noopener noreferrer" aria-label="Follow PokeBreedFun on X (opens in a new tab)" title="Follow @PokeBreedFun on X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817-5.966 6.817H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></div>
+  </header>
+  <div class="ticker-bar"><span><i class="status-dot"></i> THE NEXT GENERATION OF TOKEN LAUNCHES</span><span class="ticker-right"><b>$BREED</b><span class="divider">/</span> Collect. Connect. Evolve.</span></div>
+  <main id="main" tabindex="-1"></main>
+  <footer><a class="footer-brand" href="#map">POKÉBREED <span>© 2026</span></a><span>An entire ecosystem. From a single egg.</span><div><a href="#guide">Field guide ↗</a><button data-action="fees">Claim fees ↗</button></div></footer>
+  <dialog id="modal" aria-labelledby="modal-title"></dialog><div id="toast" role="status" aria-live="polite"></div>
+  <script src="map-expansion.js"></script>
+  <script src="map-hover.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
